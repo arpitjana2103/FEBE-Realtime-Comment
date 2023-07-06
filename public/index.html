@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RealTime Comment System</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="mt-4 row">
+                <div class="col-md-12">
+                    <h4>
+                        <strong>
+                            Real Time Comment System using NodeJS, Express,
+                            Mongo DB, Socket.io and vanila JavaScript
+                        </strong>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Corporis rem atque doloremque cumque dolor,
+                        suscipit magni cupiditate est totam, molestias veniam,
+                        perspiciatis velit! Officia voluptatibus, sunt excepturi
+                        saepe et corporis? Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Corporis rem atque
+                        doloremque cumque dolor, suscipit magni cupiditate est
+                        totam, molestias veniam, perspiciatis velit! Officia
+                        voluptatibus, sunt excepturi saepe et corporis?
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h4 class="border-bottom pb-2">Comments</h4>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="">Write a comment</label>
+                        <textarea
+                            id="textarea"
+                            class="form-control mb-3"
+                            rows="3"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <button id="submitbtn" class="btn btn-primary float-right">
+                        Post Comment
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="typing text-success mb-4"></div>
+                <div class="col-md-12">
+                    <ul class="comment__box">
+                        <li class="comment">
+                            <!-- <div class="card border-light mb-3">
+                                <div class="card-body">
+                                    <h6>John Doe</h6>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Voluptatibus
+                                        voluptatum molestiae, ex aliquid
+                                        corporis pariatur quam iusto excepturi
+                                        cumque quis?
+                                    </p>
+
+                                    <div>
+                                        <small>11.30 PM</small>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
+</html>
